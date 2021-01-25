@@ -4,10 +4,12 @@
 // current products on the page
 let currentProducts = [];
 let currentPagination = {};
+let currentFilters = [];
 
 // inititiqte selectors
 const selectShow = document.querySelector('#show-select');
 const selectPage = document.querySelector('#page-select');
+const selectBrand = document.querySelector('#brand-select');
 const sectionProducts = document.querySelector('#products');
 const spanNbProducts = document.querySelector('#nbProducts');
 
@@ -103,17 +105,37 @@ const render = (products, pagination) => {
 };
 
 /**
- * Declaration of all Listeners
+ * Sorting
  */
 
+const sortBrand = (products, brand) => {
+  if(brand == 'all'){
+    return products;
+  }
+  else{
+    return products.filter(x => x.brand == brand);
+  }
+}
+
 /**
- * Select the number of products to display
- * @type {[type]}
+ * Declaration of all Listeners
  */
 selectShow.addEventListener('change', event => {
   fetchProducts(currentPagination.currentPage, parseInt(event.target.value))
     .then(setCurrentProducts)
     .then(() => render(currentProducts, currentPagination));
+});
+
+selectPage.addEventListener('change', event => {
+  fetchProducts(parseInt(event.target.value), currentPagination.pageSize)
+    .then(setCurrentProducts)
+    .then(() => render(currentProducts, currentPagination));
+});
+
+selectBrand.addEventListener('change', event => {
+  fetchProducts(currentPagination.currentPage, currentPagination.pageSize)
+    .then(setCurrentProducts)
+    .then(() => render(sortBrand(currentProducts, event.target.value), currentPagination));
 });
 
 document.addEventListener('DOMContentLoaded', () =>
