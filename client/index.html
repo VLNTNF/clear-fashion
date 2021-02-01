@@ -7,71 +7,98 @@
   </head>
   <body>
     <h1>Clear fashion</h1>
-    <section id="options">
-      <div id="show">
-        <label for="show-select">Show:</label>
-        <select name="show" id="show-select">
-          <option value="12">12</option>
-          <option value="24">24</option>
-          <option value="48">48</option>
-        </select>
-      </div>
-      <div id="page">
-        <label for="page-select">Go to page:</label>
-        <select name="page" id="page-select"> </select>
-      </div>
-      <div id="filters">
-        <span>By reasonable price</span>
-        <span>By recently released</span>
-        <div id="brand">
-          <label for="brand-select">By brands:</label>
-          <select name="brand" id="brand-select"> 
-            <option value="all">All brands</option>
-            <option value="loom">Loom</option>
-            <option value="coteleparis">Côtelé Paris</option>
-            <option value="adresse">Adresse</option>
-            <option value="1083">1083</option>
-            <option value="dedicated">Dedicated</option>
+    <div class="box">
+      <section class="one" id="options">
+        <h2>Filters</h2>
+        <div class="box">
+          <div id="show">
+            <label for="show-select">Show:</label>
+            <select name="show" id="show-select">
+              <option value="12">12</option>
+              <option value="24">24</option>
+              <option value="48">48</option>
+            </select>
+          </div>
+          <div id="page">
+            <label for="page-select">Page:</label>
+            <select name="page" id="page-select"> </select>
+          </div>
+          <div id="brand">
+            <label for="brand-select">Brand:</label>
+            <select name="brand" id="brand-select"> </select>
+          </div>
+        </div>
+        <div id="sort">
+          <label for="sort-select">Sort:</label>
+          <select name="sort" id="sort-select">
+            <option value="no-sort">No sort</option>
+            <option value="price-asc">Cheaper</option>
+            <option value="price-desc">Expensive</option>
+            <option value="date-asc">Recently released</option>
+            <option value="date-desc">Anciently released</option>
           </select>
         </div>
-      </div>
-      <div id="sort">
-        <label for="sort-select">Sort:</label>
-        <select name="sort" id="sort-select">
-          <option value="price-asc">Cheaper</option>
-          <option value="price-desc">Expensive</option>
-          <option value="date-asc">Recently released</option>
-          <option value="date-desc">Anciently released</option>
-        </select>
-      </div>
-    </section>
-    <section id="indicators">
-      <h2>Indicators</h2>
-      <div>
-        <span>Number of products</span>
-        <span id="nbProducts">0</span>
-      </div>
-      <div>
-        <span>Number of new products</span>
-        <span>0</span>
-      </div>
-      <div>
-        <span>p50 price value</span>
-        <span>0</span>
-      </div>
-      <div>
-        <span>p90 price value</span>
-        <span>0</span>
-      </div>
-      <div>
-        <span>p95 price value</span>
-        <span>0</span>
-      </div>
-      <div>
-        <span>Last released date</span>
-        <span>2020-01-01</span>
-      </div>
-    </section>
+        <span>Select:</span>
+        <div class="box">
+          <div id="by-price">
+            <input class="inp-cbx" id="price-checkbox" type="checkbox" name="reasonable-price"/>
+            <label class="cbx" for="price-checkbox">
+              <span>
+                <svg width="12px" height="10px">
+                  <use xlink:href="#check"></use>
+                </svg>
+              </span>
+              <span>Reasonable price</span>
+            </label>
+          </div>
+          <div id="by-date">
+            <input class="inp-cbx" id="date-checkbox" type="checkbox" name="recently-released"/>
+            <label class="cbx" for="date-checkbox">
+              <span>
+                <svg width="12px" height="10px">
+                  <use xlink:href="#check"></use>
+                </svg>
+              </span>
+              <span>Recently released</span>
+            </label>
+            <svg class="inline-svg">
+              <symbol id="check" viewbox="0 0 12 10">
+                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+              </symbol>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="two" id="indicators">
+        <h2>Indicators on this page</h2>
+        <ul>
+          <li>
+            <span>Number of products:</span>
+            <span id="nbProducts">0</span>
+          </li>
+          <li>
+            <span>Number of new products:</span>
+            <span id="nbNewProducts">0</span>
+          </li>
+          <li>
+            <span>p50 price value:</span>
+            <span id="p50">0</span>
+          </li>
+          <li>
+            <span>p90 price value:</span>
+            <span id="p90">0</span>
+          </li>
+          <li>
+            <span>p95 price value:</span>
+            <span id="p95">0</span>
+          </li>
+          <li>
+            <span>Last released date:</span>
+            <span id="last-released"></span>
+          </li>
+        </ul>
+      </section>
+    </div>
     <section id="products"></section>
     <script type="text/javascript" charset="UTF-8" src="portfolio.js"></script>
   </body>
