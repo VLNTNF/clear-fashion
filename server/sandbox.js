@@ -1,12 +1,11 @@
 /* eslint-disable no-console, no-process-exit */
-const dedicatedbrand = require('./sources/dedicatedbrand');
+const index = require('./index');
 
-async function sandbox (eshop = 'https://www.dedicatedbrand.com/en/men/t-shirts#page=999') {
+async function shopScrape (eshop) {
   try {
-    console.log(`🕵️‍♀️  browsing ${eshop} source`);
+    console.log(`🕵️‍♀️  browsing ${eshop}`);
 
-    const products = await dedicatedbrand.scrape(eshop);
-
+    const products = await index(eshop);
     console.log(products);
     console.log('done');
     process.exit(0);
@@ -18,4 +17,8 @@ async function sandbox (eshop = 'https://www.dedicatedbrand.com/en/men/t-shirts#
 
 const [,, eshop] = process.argv;
 
-sandbox(eshop);
+
+//shopScrape('https://www.dedicatedbrand.com');
+//shopScrape('https://mudjeans.eu');
+
+
