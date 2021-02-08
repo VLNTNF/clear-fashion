@@ -1,14 +1,8 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
-const {parseDomain, fromUrl} = require('parse-domain');
-
-//type in url
-const typeSite = ["women", "men", "kids"];
-//type in our list
-const typeName = ["women", "men", "kids"];
 
 //to put at the end of urls to load every products
-const expander = '#page=999';
+const expander = '?n=999';
 
 /**
  * Parse webpage e-shop
@@ -20,15 +14,14 @@ const expander = '#page=999';
 const pages = (url, data) => { 
   const $ = cheerio.load(data);
 
-  return $('.mainNavigation-link-subMenu .mainNavigation-link-subMenu-link')
+  return $('.cbp-hrmenu .cbp-hrmenu-tab.cbp-hrmenu-tab-5')
     .map((i, element) => {
-      const link = `${url}${$('a', element).attr('href')}`;
-      const name = $('a span', element).text();
-      for (let i = 0; i < typeSite.length; i++) {
-        if(link.toLowerCase().includes(typeSite[i])){
-          return {type:typeName[i], name, link:link+expander};
-        }
-      }
+      const link = `${$('a', element).attr('href')}`;
+      const name = $('a', element)
+      .find('.cbp-tab-title')
+      .text()
+      .trim();
+      return {type:'unisex', name, link:link+expander};
     })
     .get();
 }
@@ -36,26 +29,32 @@ const pages = (url, data) => {
 const products = (url, data) => {
   const $ = cheerio.load(data);
 
-  return $('.js-productPreviewContainer.category-list .productList')
+  return $('.product_list .product-container')
     .map((i, element) => {
       const name = $(element)
-        .find('.productList-title')
+        .find('.product-name')
+        .first()
         .text()
         .trim()
         .replace(/\s/g, ' ');
       const price = parseInt(
         $(element)
-          .find('.productList-price')
+          .find('.price.product-price')
           .text()
       );
-      const link = `${url}${$(element)
-        .find('.productList-link')
-        .attr('href')}`;
+      const link = $(element)
+        .find('.product-name')
+        .attr('href');
       const images = [];
       $(element)
-        .find('img')
-        .each((i, image) =>{
-          images.push($(image).attr('src'));
+        .find('.product-image-container .product_img_link')
+        .map((i, image)=>{
+          images.push($(image)
+          .find('.img_0')
+          .attr('data-original'));
+          images.push($(image)
+          .find('.img_1')
+          .attr('data-rollover'));
         });
       return {name, link, price, images};
     })
@@ -67,14 +66,13 @@ const products = (url, data) => {
  * @param  {[type]}  url
  * @return {Array|null}
  */
-
 module.exports.scrape = async (url, productsScrape = true) => {
   const response = await axios(url);
   const {data, status} = response;
 
   if (status >= 200 && status < 300) {
     if(productsScrape){
-      return products(`https://${fromUrl(url)}`, data);
+      return products(url, data);
     } else {
       return pages(url, data);
     }
