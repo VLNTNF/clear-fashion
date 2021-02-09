@@ -1,0 +1,78 @@
+{
+    "news": [],
+    "t-shirts": [
+        "(?<!swea)t(ee)?-?shirt",
+        "sleeve"
+    ],
+    "basics": [],
+    "sweats": [
+        "hoodie",
+        "sweat",
+        "pull"
+    ],
+    "knitwear": [
+        "tricot",
+        "knit"
+    ],
+    "dresses": [
+        "[^a]dress",
+        "robe"
+    ],
+    "shirts": [
+        "chemise",
+        "(?<!tee)(?<!tee-)(?<!t)(?<!t-)shirt"
+    ],
+    "bottoms": [
+        "jogger",
+        "jogging",
+        "pantalon",
+        "pantacourt",
+        "(?<!under)(?<!under-)pants",
+        "short",
+        "jean",
+        "jeans"
+    ],
+    "jackets": [
+        "jacket",
+        "blouson",
+        "imperm[eé]able",
+        "veste",
+        "manteau",
+        "parka",
+        "coat"
+    ],
+    "caps-and-beanies": [
+        "casquette",
+        "caps?(\\W|$)",
+        "beanie",
+        "bonnet"
+    ],
+    "socks": [
+        "sock",
+        "chaussette"
+    ],
+    "underwear": [
+        "boxer",
+        "cale[cç]on",
+        "underpant",
+        "long.?johns",
+        "culotte",
+        "panties"
+
+    ],
+    "swim-shorts": [
+        "swim",
+        "bathing",
+        "bikini",
+        "bain"
+    ],
+    "tote-bags": [
+        "bag",
+        "tote"
+    ],
+    "shoes": [
+        "chaussure",
+        "sneaker",
+        "shoe"
+    ]
+}

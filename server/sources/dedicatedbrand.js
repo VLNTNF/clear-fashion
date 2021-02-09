@@ -1,7 +1,10 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 const {parseDomain, fromUrl} = require('parse-domain');
+const fs = require('fs');
 
+
+/*
 //type in url
 const typeSite = ["women", "men", "kids"];
 //type in our list
@@ -10,11 +13,6 @@ const typeName = ["women", "men", "kids"];
 //to put at the end of urls to load every products
 const expander = '#page=999';
 
-/**
- * Parse webpage e-shop
- * @param  {String} data - html response
- * @return {Array} products
- */
 
 
 const pages = (url, data) => { 
@@ -62,12 +60,6 @@ const products = (url, data) => {
     .get();
 };
 
-/**
- * Scrape all the products for a given url page
- * @param  {[type]}  url
- * @return {Array|null}
- */
-
 module.exports.scrape = async (url, productsScrape = true) => {
   const response = await axios(url);
   const {data, status} = response;
@@ -83,4 +75,49 @@ module.exports.scrape = async (url, productsScrape = true) => {
   console.error(status);
 
   return null;
+};
+
+*/
+
+// uuid, name, brand, link, price, categories, images
+
+module.exports.scrape = async (url, productsScrape = true) => {
+  const response = await axios(`${url}/en/loadfilter`);
+  const {data, status} = response;
+
+  if (status >= 200 && status < 300) {
+    var categories = data.filter.categories;
+    var products = data.products;
+    var json = [];
+
+    products.forEach(product => {
+      if(!Array.isArray(product) && product.price.soldout == false){
+        let p = {};
+        p.uuid =null;
+        p.name = product.name;
+        p.brand = "DEDICATED";
+        p.link = `${url}${product.canonicalUri}`;
+        p.price = product.price.priceAsNumber;
+        p.categories = [];
+        Object.keys(categories).forEach(key =>{
+          let k = (key.match(new RegExp("/", "g")) || []).length;
+          if(categories[key].includes(product.id) && k==1){
+            p.categories.push(key);
+          }
+        });
+        p.images = product.image;
+        json.push(p);
+      }
+    });
+    const file = JSON.stringify({data:json}, null, 4);
+    try{
+      fs.writeFileSync("dedicated.json", file);
+      console.log('JSON saved');
+    } catch(err){
+      console.error(err);
+    }
+  }
+  else{
+    console.error(status);
+  }
 };

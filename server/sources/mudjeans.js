@@ -4,8 +4,10 @@ const {parseDomain, fromUrl} = require('parse-domain');
 
 //type in url
 const typeSite = ["women", "men", "kids"];
+const clothSite = ['jacket', 'parker', 'bag'];
 //type in our list
 const typeName = ["women", "men", "kids"];
+const clothName = ['jackets', 'jackets', 'tote-bags'];
 
 //to put at the end of urls to load every products
 const expander = '';
@@ -36,11 +38,20 @@ const products = (url, data) => {
   const $ = cheerio.load(data);
   return $('.shopify-section.collection__landing .col.col-xs-6.col-md-3')
     .map((i, element) => {
+      const uuid = null;
+
       const name = $(element)
         .find('.product-title a')
         .text()
         .trim()
         .replace(/\s/g, ' ');
+
+      const brand = 'MUD Jeans';
+
+      const link = `${url}${$(element)
+        .find('.product-title a')
+        .attr('href')}`;
+
       const price = parseInt(
         $(element)
           .find('.product-price')
@@ -48,16 +59,35 @@ const products = (url, data) => {
           .text()
           .replaceAll(/[^\d.,-]/g, '')
       );
-      const link = `${url}${$(element)
-        .find('.product-title a')
-        .attr('href')}`;
+
+      const categories = [];
+      var genre = "";
+      for (let i = 0; i < typeSite.length; i++) {
+        if(link.toLowerCase().includes(typeSite[i])){
+          genre = typeName[i];
+          break;
+        }
+      }
+      if(genre == ""){
+        genre = 'unisex';
+      }
+      for (let i = 0; i < clothSite.length; i++) {
+        if(link.toLowerCase().includes(clothSite[i])){
+          categories.push(`${genre}/${clothName[i]}`);
+        }
+      }
+      if(categories.length == 0){
+        categories.push(`${genre}/bottoms`);
+      }
+
       const images = [];
       $(element)
         .find('img')
         .each((i, image) =>{
           images.push(`https:${$(image).attr('src')}`);
         });
-      return {name, link, price, images};
+
+      return {uuid, name, brand, link, price, categories, images};
     })
     .get();
 };
