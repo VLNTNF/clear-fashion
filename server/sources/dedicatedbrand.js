@@ -1,10 +1,8 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
-const {parseDomain, fromUrl} = require('parse-domain');
+const { parseDomain, fromUrl } = require('parse-domain');
 const fs = require('fs');
 
-
-/*
 //type in url
 const typeSite = ["women", "men", "kids"];
 //type in our list
@@ -13,9 +11,8 @@ const typeName = ["women", "men", "kids"];
 //to put at the end of urls to load every products
 const expander = '#page=999';
 
-
-
-const pages = (url, data) => { 
+/*
+const pages = (url, data) => {
   const $ = cheerio.load(data);
 
   return $('.mainNavigation-link-subMenu .mainNavigation-link-subMenu-link')
@@ -23,8 +20,8 @@ const pages = (url, data) => {
       const link = `${url}${$('a', element).attr('href')}`;
       const name = $('a span', element).text();
       for (let i = 0; i < typeSite.length; i++) {
-        if(link.toLowerCase().includes(typeSite[i])){
-          return {type:typeName[i], name, link:link+expander};
+        if (link.toLowerCase().includes(typeSite[i])) {
+          return { type: typeName[i], name, link: link + expander };
         }
       }
     })
@@ -52,20 +49,20 @@ const products = (url, data) => {
       const images = [];
       $(element)
         .find('img')
-        .each((i, image) =>{
+        .each((i, image) => {
           images.push($(image).attr('src'));
         });
-      return {name, link, price, images};
+      return { name, link, price, images };
     })
     .get();
 };
 
 module.exports.scrape = async (url, productsScrape = true) => {
   const response = await axios(url);
-  const {data, status} = response;
+  const { data, status } = response;
 
   if (status >= 200 && status < 300) {
-    if(productsScrape){
+    if (productsScrape) {
       return products(`https://${fromUrl(url)}`, data);
     } else {
       return pages(url, data);
@@ -76,14 +73,11 @@ module.exports.scrape = async (url, productsScrape = true) => {
 
   return null;
 };
-
 */
 
-// uuid, name, brand, link, price, categories, images
-
-module.exports.scrape = async (url, productsScrape = true) => {
+module.exports.scrape = async (url, debug) => {
   const response = await axios(`${url}/en/loadfilter`);
-  const {data, status} = response;
+  const { data, status } = response;
 
   if (status >= 200 && status < 300) {
     var categories = data.filter.categories;
@@ -91,17 +85,17 @@ module.exports.scrape = async (url, productsScrape = true) => {
     var json = [];
 
     products.forEach(product => {
-      if(!Array.isArray(product) && product.price.soldout == false){
+      if (!Array.isArray(product) && product.price.soldout == false) {
         let p = {};
-        p.uuid =null;
+        p.uuid = null;
         p.name = product.name;
         p.brand = "DEDICATED";
-        p.link = `${url}${product.canonicalUri}`;
+        p.link = `${url}/${product.canonicalUri}`;
         p.price = product.price.priceAsNumber;
         p.categories = [];
-        Object.keys(categories).forEach(key =>{
+        Object.keys(categories).forEach(key => {
           let k = (key.match(new RegExp("/", "g")) || []).length;
-          if(categories[key].includes(product.id) && k==1){
+          if (categories[key].includes(product.id) && k == 1) {
             p.categories.push(key);
           }
         });
@@ -109,15 +103,17 @@ module.exports.scrape = async (url, productsScrape = true) => {
         json.push(p);
       }
     });
-    const file = JSON.stringify({data:json}, null, 4);
-    try{
-      fs.writeFileSync("dedicated.json", file);
+    const file = JSON.stringify({ data: json }, null, 4);
+    try {
+      fs.writeFileSync("./sources/$dedicated.json", file);
       console.log('JSON saved');
-    } catch(err){
+      return json;
+    } catch (err) {
       console.error(err);
+      return null;
     }
   }
-  else{
+  else {
     console.error(status);
   }
 };

@@ -1,0 +1,1381 @@
+{
+    "data": [
+        {
+            "uuid": null,
+            "name": "Relax Rose - Sun Stripe",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/relax-rose-sun-stripe",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Relax-Rose-Sun-Stripe-fullfront-5_1_346x498.jpg?v=1606315297",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Relax-Rose-Sun-Stripe-Halffront-15_1_346x498.jpg?v=1606315297"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Relax Rose - Whale Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/relax-rose-whale-blue",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Relax-Rose-Whale-Blue-Fullfront_346x498.jpg?v=1606315030",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Relax-Rose-Whale-Blue-Halffront_346x498.jpg?v=1606315030"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Relax Rose - Heavy Stone",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/relax-rose-heavy-stone",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Relax-Rose-Heavy-Stone-Fullfront_346x498.jpg?v=1606315241",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Relax-Rose-Heavy-Stone-Halffront_346x498.jpg?v=1606315241"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Relax Rose - Dip Black",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/relax-rose-dip-black",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Relax-Rose-Dip-Black-Fullfront_346x498.jpg?v=1606315239",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Relax-Rose-Dip-Black-Halffront_346x498.jpg?v=1606315239"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Relax Rose - Undyed",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/relax-rose-undyed",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Relax-Rose-Undyed-Fullfront_346x498.jpg?v=1606315075",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Relax-Rose-Undyed-Halffront_346x498.jpg?v=1606315075"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Relax Rose - Terra",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/relax-rose-terra",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Relax-Rose-Terra-Fullfront-1_346x498.jpg?v=1606315041",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Relax-Rose-Terra-Halffront_346x498.jpg?v=1606315042"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Relax Rose - Corn",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/relax-rose-corn",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Relax-Rose-Corn-Fullfront_346x498.jpg?v=1606315040",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Relax-Rose-Corn-Halffront_346x498.jpg?v=1606315040"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Skinny Hazen - Dip Dry",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/skinny-hazen-dip-dry",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Skinny-Hazen-Dip-Dry-Fullfront-2_1_346x498.jpg?v=1606315118",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Skinny-Hazen-Dip-Dry-Halffront-28_1_346x498.jpg?v=1606315119"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Skinny Hazen - Stone Black",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/skinny-hazen-stone-black",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Skinny-Hazen-Stone-Black-Fullfront_346x498.jpg?v=1606315117",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Skinny-Hazen-Stone-Black-Halffront_346x498.jpg?v=1606315117"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Skinny Hazen - Strong Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/skinny-hazen-strong-blue",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Skinny-Hazen-Strong-Blue-Fullfront_346x498.jpg?v=1606315149",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Skinny-Hazen-Strong-Blue-Halffront_346x498.jpg?v=1606315149"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Skinny Hazen - Fan Stone",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/skinny-hazen-fan-stone",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Skinny-Hazen-Fan-Stone-Fullfront_1eb49e55-3ace-453b-aa73-f4e504f25903_346x498.jpg?v=1606315091",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Skinny-Hazen-Fan-Stone-Halffront_0330986d-6919-4ea8-9171-03c48c9692b7_346x498.jpg?v=1606315091"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Skinny Hazen - Pure Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/skinny-hazen-pure-blue",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Skinny-Hazen-Pure-Blue-Fullfront_346x498.jpg?v=1606315135",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Skinny-Hazen-Pure-Blue-Halffront_346x498.jpg?v=1606315135"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Skinny Hazen - Sea Stone",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/skinny-hazen-sea-stone",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Skinny-Hazen-Sea-Stone-Fullfront_346x498.jpg?v=1606315158",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Skinny-Hazen-Sea-Stone-Halffront_346x498.jpg?v=1606315158"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Skinny Hazen - O3 Grey",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/skinny-hazen-o3-grey",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Skinny-Hazen-03-Grey-Fullfront_346x498.jpg?v=1606315157",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Skinny-Hazen-03-Grey-Halffront_346x498.jpg?v=1606315157"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Regular Swan - Authentic Indigo - RCY",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/regular-swan-authentic-indigo-rcy",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Regular-Swan-Authentic-Indigo-Fullfront_346x498.jpg?v=1606315108",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Regular-Swan-Authentic-Indigo-Halffront_346x498.jpg?v=1606315108"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Regular Swan - Strong Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/regular-swan-strong-blue",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Regular-Swan-Strong-Blue-Fullfront_346x498.jpg?v=1606315140",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Regular-Swan-Strong-Blue-Halffront_346x498.jpg?v=1606315140"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Regular Swan - Stone Black",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/regular-swan-stone-black",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Regular-Swan-Stone-Black-Fullfront_346x498.jpg?v=1606315294",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Regular-Swan-Stone-Black-Halffront_346x498.jpg?v=1606315294"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Regular Swan - Heavy Stone",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/regular-swan-heavy-stone",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Regular-Swan-Heavy-Stone-Fullfront_346x498.jpg?v=1606315279",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Regular-Swan-Heavy-Stone-Halffront_346x498.jpg?v=1606315279"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Regular Swan - Sea Stone",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/regular-swan-sea-stone",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Organic-Jeans-Regular-Swan-Sea-Stone-fullfront-1_8a5f5b5c-50b1-4879-84dd-56c721099cec_346x498.jpg?v=1600776495",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Organic-Jeans-Regular-Swan-Sea-Stone-halffront-1_808f8698-3475-4b6b-a162-eb1fd1e3d7bb_346x498.jpg?v=1602015904"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Flared Hazen - Stone Black",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/flared-hazen-stone-black",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Flared-Hazen-Stone-Black-Fullfront_346x498.jpg?v=1606315170",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Flared-Hazen-Stone-Black-Halffront_346x498.jpg?v=1606315170"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Flared Hazen - Strong Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/flared-hazen-strong-blue",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Flared-Hazen-Strong-Blue-Fullfront_346x498.jpg?v=1606315142",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Flared-Hazen-Strong-Blue-Halffront_346x498.jpg?v=1606315142"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Flared Hazen - Authentic Indigo",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/flared-hazen-authentic-indigo",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Flared-Hazen-Authentic-Indigo-Fullfront_346x498.jpg?v=1606315281",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Flared-Hazen-Authentic-Indigo-Halffront_346x498.jpg?v=1606315281"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Flared Hazen - Undyed",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/flared-hazen-undyed",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Flared-Hazen-Undyed-Fullfront_346x498.jpg?v=1606315089",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Flared-Hazen-Undyed-Halffront_346x498.jpg?v=1606315089"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Flared Hazen - Terra",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/flared-hazen-terra",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Flared-Hazen-Terra-Fullfront_346x498.jpg?v=1606315087",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Flared-Hazen-Terra-Halffront_346x498.jpg?v=1606315087"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Flared Hazen - Corn",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/flared-hazen-corn",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Flared-Hazen-Corn-Fullfront_346x498.jpg?v=1606315084",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Flared-Hazen-Corn-Halffront_346x498.jpg?v=1606315084"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Flared Hazen - Olive",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/flared-hazen-olive",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/flaredhazenolive-Fullbodywomen-5-eco-jeans_346x498.jpg?v=1606315299",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/flaredhazenolive-Fullbodywomen-27-eco-jeans_346x498.jpg?v=1606315299"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Skinny Lilly - Stone Black",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/skinny-lilly-stone-black",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Skinny-Lilly-Stone-Black-Fullfront_346x498.jpg?v=1606315115",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Skinny-Lilly-Stone-Black-Halffront_346x498.jpg?v=1606315115"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Skinny Lilly - Strong Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/skinny-lilly-strong-blue",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Skinny-Lilly-Strong-Blue-Fullfront_346x498.jpg?v=1606315151",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Skinny-Lilly-Strong-Blue-Halffront_346x498.jpg?v=1606315151"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Skinny Lilly - O3 Grey",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/skinny-lilly-o3-grey",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Skinny-Lilly-03-Grey-Fullfront-1_346x498.jpg?v=1606315167",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Skinny-Lilly-03-Grey-Halffront_346x498.jpg?v=1606315167"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Skinny Lilly - Fan Stone",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/skinny-lilly-fan-stone",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Skinny-Lilly-Fan-Stone-Fullfront_346x498.jpg?v=1606315093",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Skinny-Lilly-Fan-Stone-Halffront_346x498.jpg?v=1606315093"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Skinny Lilly - Pure Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/skinny-lilly-pure-blue",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Skinny-Lilly-Pure-Blue-Fullfront-1_346x498.jpg?v=1606315138",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Skinny-Lilly-Pure-Blue-Halffront_346x498.jpg?v=1606315138"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Relax Fred - Heavy Stone",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/relax-fred-heavy-stone-w",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/uni-Sustainable-Jeans-Relaxed-Fred-Heavy-Stone-Fullfront_346x498.jpg?v=1606315028",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Relaxed-Fred-Heavy-Stone-Fullfront_346x498.jpg?v=1606315028"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Stretch Mimi - Stone Black",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/stretch-mimi-stone-black",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Stretch-Mimi-Stone-Black-Fullfront_346x498.jpg?v=1606315193",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Stretch-Mimi-Stone-Black-Halffront_346x498.jpg?v=1606315193"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Cropped Mimi - Sun Stone",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/cropped-mimi-sun-stone",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Cropped-Mimi-Fullfront_346x498.jpg?v=1606315124",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Cropped-Mimi-Halffront_346x498.jpg?v=1606315124"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Stretch Mimi - Pure Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/stretch-mimi-pure-blue",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Stretch-Mimi-Pure-Blue-Fullfront_346x498.jpg?v=1606315244",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Stretch-Mimi-Pure-Blue-Halffront_346x498.jpg?v=1606315244"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Will Works - Dip Black W",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/will-works-dip-black-w",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Unisex-Sustainable-Jeans-Will-Works-Dip-Black-Fullfront-Recovered_346x498.jpg?v=1611743566",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Will-Works-Dip-Black-Fullfront_346x498.jpg?v=1611743566"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Will Works - Heavy Stone W",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/will-works-heavy-stone-w",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/will-works-heavy-stone-full-body-unisex-3_346x498.jpg?v=1611743653",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/willworksheavystone-Fullbodywomen-6_346x498.jpg?v=1611743653"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Will Works - Olive",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/will-works-olive",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Will-Works-Olive-Fullfront-1_346x498.jpg?v=1611743717",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Will-Works-Olive-Halffront_346x498.jpg?v=1611743717"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Will Works - Undyed",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/will-works-undyed",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Unisex-Sustainable-Jeans-Will-Works-Undyed-Fullfront_346x498.jpg?v=1611743779",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Will-Works-Undyed-Fullfront_346x498.jpg?v=1611743779"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Boyfriend Basin - Stone Black",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/boyfriend-basin-stone-black",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Fair-Jeans-Boyfriend-Basin-Stone-Black-fullfront-2_23aeb510-0857-4f6d-a8fa-7d041f59233d_346x498.jpg?v=1600775820",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Fair-Jeans-Boyfriend-Basin-Stone-Black-halffront-2_74db0365-d430-42fd-8eba-14739e70b498_346x498.jpg?v=1602016863"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Boyfriend Basin - Light Stone",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/boyfriend-basin-light-stone",
+            "price": 119,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Fair-jeans-boyfriend-basin-light-stone-fullfront-1_c3913423-993e-455e-8854-2b2c9bd863b7_346x498.jpg?v=1600775852",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Fair-jeans-Boyfriend-basin-light-stone-halffront-1_6eafdab8-933e-47c0-901c-5c3e412f29b7_346x498.jpg?v=1602016849"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Irwin Dungaree - Whale Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/irwin-dungaree-whale-blue",
+            "price": 149,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Women-Organic-Dungaree-Irwine-Whale-Blue-fullfront_bf00eda9-ef26-4dd0-a0a6-ff795cc362b2_346x498.jpg?v=1600776858",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Women-Organic-Dungaree-Irwine-Whale-Blue_5e2902b2-714c-4ce6-b90d-5d07b333c712_346x498.jpg?v=1600776858"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Beverly Short - Sun Stone",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/beverly-short-sun-stone",
+            "price": 89,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Beverly-Short-Sun-Stone-Fullfront_346x498.jpg?v=1606315015",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Beverly-Short-Sun-Stone-Halffront_346x498.jpg?v=1606315015"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Beverly Short - Dip Black",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/beverly-short-dip-black",
+            "price": 89,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Beverly-Short-Dip-Black-Fullfront_346x498.jpg?v=1606315018",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Beverly-Short-Dip-Black-Halffront_346x498.jpg?v=1606315018"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Sophie Rocks - Dip Black",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/sophie-rocks-dip-black",
+            "price": 89,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Sophie-Rocks-Dip-Black-Fullfront_346x498.jpg?v=1606315021",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Sophie-Rocks-Dip-Black-Halffront_346x498.jpg?v=1606315021"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Sophie Rocks - Heavy Stone",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/sophie-rocks-heavy-stone",
+            "price": 89,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Sophie-Rocks-Heavy-Stone-Fullfront-1_346x498.jpg?v=1606315020",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Sophie-Rocks-Heavy-Stone-Halffront_346x498.jpg?v=1606315020"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Sophie Rocks - Terra",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/sophie-rocks-terra",
+            "price": 89,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Sophie-Rocks-Terra-Fullfront_346x498.jpg?v=1606315080",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Sophie-Rocks-Terra-Halffront_346x498.jpg?v=1606315080"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Sophie Rocks - Undyed",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/sophie-rocks-undyed",
+            "price": 89,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Sophie-Rocks-Undyed-Fullfront-1_346x498.jpg?v=1606315083",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Sophie-Rocks-Undyed-Halffront_346x498.jpg?v=1606315083"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Sophie Rocks - Corn",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/sophie-rocks-corn",
+            "price": 89,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Sophie-Rocks-Corn-Fullfront_346x498.jpg?v=1606315081",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Sophie-Rocks-Corn-Halffront_346x498.jpg?v=1606315081"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Evy Short - Pure Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/evy-short-pure-blue",
+            "price": 89,
+            "categories": [
+                "women/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Ivy-Shorts-Pure-Blue-Front_346x498.jpg?v=1599749358",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Sustainable-Jeans-Ivy-Shorts-Pure-Blue-halffront_346x498.jpg?v=1602016905"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Alex Parker - Whale Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/alex-parker-whale-blue",
+            "price": 149,
+            "categories": [
+                "women/bottoms",
+                "women/jackets"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Sustainable-Parker-Alex-whale-blue-fullfront_9abe8fc5-8f78-49a7-90fb-811146e0c5a8_346x498.jpg?v=1600777164",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Parker-Alex-whale-blue-detail_fb81b3b6-faa9-4125-8ce7-1cce075f10f2_346x498.jpg?v=1600777164"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Alex Parker - Dip Black",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/alex-parker-dip-black",
+            "price": 149,
+            "categories": [
+                "women/bottoms",
+                "women/jackets"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Sustainable-Parker-Alex-dip-black-fullfront_b899c34c-82bd-4c87-a632-5ec242c12b36_346x498.jpg?v=1600777190",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Parker-Alex-dip-black-detail_80437aac-c114-44f4-accc-76c74220bc1f_346x498.jpg?v=1600777190"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Jodi Jacket - Undyed",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/jodi-jacket-undyed",
+            "price": 129,
+            "categories": [
+                "women/bottoms",
+                "women/jackets"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Unisex-Sustainable-Jackets-Tyler-Jacket-Undyed-Fullfront-Recovered_346x498.jpg?v=1606315102",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Jodi-Jacket-Undyed-Fullfront_346x498.jpg?v=1606315102"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Toto bag",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/toto-bag",
+            "price": 29,
+            "categories": [
+                "women/tote-bags"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/tote-Fullbodywomen-6_346x498.jpg?v=1606315286",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/tote-Fullbodywomen-2_346x498.jpg?v=1606315286"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Tyler Jacket - Heavy Stone",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/tyler-jacket-heavy-stone",
+            "price": 119,
+            "categories": [
+                "women/bottoms",
+                "women/jackets"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Unisex-Sustainable-Jackets-Tyler-Jacket-Heavy-Stone-Fullfront-Recovered_346x498.jpg?v=1606314989",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Tyler-Jacket-Heavy-Stone-Fullfront_346x498.jpg?v=1606314989"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Tyler Jacket - Strong Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/women-jeans/products/tyler-jacket-strong-blue",
+            "price": 119,
+            "categories": [
+                "women/bottoms",
+                "women/jackets"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Tyler-Jacket-Strong-Blue-Fullfront_346x498.jpg?v=1606315146",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Tyler-Jacket-Strong-Blue-Fullfront_346x498.jpg?v=1606315146"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Regular Dunn - True Indigo",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/regular-dunn-true-indigo",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Regular-Dunn-True-Indigo-Fullfront_346x498.jpg?v=1611740786",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Regular-Dunn-True-Indigo-Halffront_346x498.jpg?v=1611740786"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Regular Dunn - Stone Black",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/regular-dunn-stone-black",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Regular-Dunn-Stone-Black-Fullfront_346x498.jpg?v=1611740573",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Regular-Dunn-Stone-Black-Halffront_346x498.jpg?v=1611740573"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Regular Dunn - Pure Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/regular-dunn-pure-blue",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Regular-Dunn-Pure-Blue-Fullfront_346x498.jpg?v=1611740558",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Regular-Dunn-Pure-Blue-Halffront_346x498.jpg?v=1611740558"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Regular Dunn - O3 Grey",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/regular-dunn-o3-grey",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Regular-Dunn-03-Grey-Fullfront_346x498.jpg?v=1611740370",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Regular-Dunn-03-Grey-Halffront_346x498.jpg?v=1611740370"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Regular Dunn - Dip Dry",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/regular-dunn-dip-dry",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Regular-Dunn-Dip-Dry-Fullfront-1_346x498.jpg?v=1611740294",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Regular-Dunn-Dip-Dry-Halffront_346x498.jpg?v=1611740294"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Regular Dunn - Sun Stone",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/regular-dunn-sun-stone",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Regular-Dunn-Sun-Stone-Fullfront_346x498.jpg?v=1611740720",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Regular-Dunn-Sun-Stone-Halffront_346x498.jpg?v=1611740720"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Regular Dunn - Stone Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/regular-dunn-stone-blue",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Regular-Dunn-Stone-Blue-Fullfront_346x498.jpg?v=1611740656",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Regular-Dunn-Stone-Blue-Halffront_346x498.jpg?v=1611740656"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Regular Bryce - Authentic Indigo - RCY",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/regular-bryce-authentic-indigo-rcy",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Ethical-Jeans-Regular-Bryce-Authentic-Indigo-Fullfront-1_346x498.jpg?v=1606315105",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Ethical-Jeans-Regular-Bryce-Authentic-Indigo-Halffront_346x498.jpg?v=1606315105"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Regular Bryce - Strong Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/regular-bryce-strong-blue",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Ethical-Jeans-Regular-Bryce-Strong-Blue-Fullfront-3_1_346x498.jpg?v=1606315196",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Ethical-Jeans-Regular-Bryce-Strong-Blue-Halffront-2_1_346x498.jpg?v=1606315196"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Regular Bryce - Heavy Stone",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/regular-bryce-heavy-stone",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Ethical-Jeans-Regular-Bryce-Heavy-Stone-Fullfront-1_346x498.jpg?v=1606315246",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Ethical-Jeans-Regular-Bryce-Heavy-Stone-Halffront_346x498.jpg?v=1606315246"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Regular Bryce - Dry Spirit",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/regular-bryce-dry-spirit",
+            "price": 139,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Ethical-Jeans-Regular-Bryce-Dip-Dry-Fullfront-11_1_346x498.jpg?v=1606314991",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Ethical-Jeans-Regular-Bryce-Dip-Dry-halffront-3_1_346x498.jpg?v=1606314991"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Extra Easy - Fan Stone",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/extra-easy-fan-stone",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Ethical-Jeans-Extra-Easy-Fan-Stone-Fullfront_346x498.jpg?v=1606315292",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Ethical-Jeans-Extra-Easy-Fan-Stone-Halffront_346x498.jpg?v=1606315292"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Extra Easy - Strong Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/extra-easy-strong-blue",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Ethical-Jeans-Extra-Easy-Strong-Blue-Fullfront_346x498.jpg?v=1606315290",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Ethical-Jeans-Extra-Easy-Strong-Blue-Halffront_346x498.jpg?v=1606315290"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Extra Easy - Dusty Dry",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/extra-easy-dusty-dry",
+            "price": 139,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Extra-Easy-Dsr-Selfedge-Fullfront_346x498.jpg?v=1606315288",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Extra-Easy-Dsr-Selfedge-Halfback_346x498.jpg?v=1606315288"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Slim Lassen - Strong Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/slim-lassen-strong-blue",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Slim-Lassen-Strong-Blue-Fullfront_346x498.jpg?v=1606315154",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Slim-Lassen-Strong-Blue-Halffront_346x498.jpg?v=1606315154"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Slim Lassen - Stone Black",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/slim-lassen-stone-black",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Slim-Lassen-Stone-Black-Fullfront_346x498.jpg?v=1606315120",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Slim-Lassen-Stone-Black-Halffront_346x498.jpg?v=1606315120"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Slim Lassen - O3 Grey",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/slim-lassen-o3-grey",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Slim-Lassen-O3-Grey-Fullfront_346x498.jpg?v=1606315191",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Slim-Lassen-O3-Grey-Halffront_346x498.jpg?v=1606315191"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Slim Lassen - Pure Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/slim-lassen-pure-blue",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Slim-Lassen-Pure-Blue-Fullfront_346x498.jpg?v=1606315126",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Slim-Lassen-Pure-Blue-Halffront_346x498.jpg?v=1606315126"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Slim Lassen - Dip Dry",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/slim-lassen-dip-dry",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Slim-Lassen-Dip-Dry-Fullfront_346x498.jpg?v=1606315172",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Slim-Lassen-Dip-Dry-Halffront_346x498.jpg?v=1606315172"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Slim Lassen - Sea Stone",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/slim-lassen-sea-stone",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Slim-Lassen-Sea-Stone-Fullfront_346x498.jpg?v=1606315189",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Slim-Lassen-Sea-Stone-Halffront_346x498.jpg?v=1606315189"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Relax Fred - Heavy Stone",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/relax-fred-heavy-stone-w",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/uni-Sustainable-Jeans-Relaxed-Fred-Heavy-Stone-Fullfront_346x498.jpg?v=1606315028",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Relaxed-Fred-Heavy-Stone-Fullfront_346x498.jpg?v=1606315028"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Dunn Chino - Strong Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/dunn-chino-strong-blue",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Man-Organic-jeans-Dunn-Chino-Strong-Blue-fullfront-2_835e31e5-5b9d-44dc-906f-8dbd76ec8d71_346x498.jpg?v=1600776026",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Man-Organic-Jeans-Dunn-Chino-Strong-Blue-halffront-4_1a3a6219-d85e-4567-8c99-816621032fc3_346x498.jpg?v=1602016880"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Redunn Chino - Undyed",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/redunn-chino-undyed",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Redunn-Chino-Undyed-Fullfront_346x498.jpg?v=1606315038",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Redunn-Chino-Undyed-Halffront_346x498.jpg?v=1606315038"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Redunn Chino - Olive",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/redunn-chino-olive",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Redunn-Chino-Olive-Fullfront_346x498.jpg?v=1606315034",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Redunn-Chino-Olive-Halffront_346x498.jpg?v=1606315034"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Redunn Chino - Terra",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/redunn-chino-terra",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Redunn-Chino-Terra-Fullfront_346x498.jpg?v=1606315036",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Redunn-Chino-Terra-HalfFront_346x498.jpg?v=1606315036"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Will Works - Dip Black W",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/will-works-dip-black-w",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Unisex-Sustainable-Jeans-Will-Works-Dip-Black-Fullfront-Recovered_346x498.jpg?v=1611743566",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Jeans-Will-Works-Dip-Black-Fullfront_346x498.jpg?v=1611743566"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Will Works - Heavy Stone W",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/will-works-heavy-stone-w",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/will-works-heavy-stone-full-body-unisex-3_346x498.jpg?v=1611743653",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/willworksheavystone-Fullbodywomen-6_346x498.jpg?v=1611743653"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Will Works - Olive",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/will-works-olive",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Will-Works-Olive-Fullfront-1_346x498.jpg?v=1611743717",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Will-Works-Olive-Halffront_346x498.jpg?v=1611743717"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Will Works - Undyed",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/will-works-undyed",
+            "price": 119,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Unisex-Sustainable-Jeans-Will-Works-Undyed-Fullfront_346x498.jpg?v=1611743779",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Will-Works-Undyed-Fullfront_346x498.jpg?v=1611743779"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Irwin Dungaree - Whale Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/irwin-dungaree-whale-blue",
+            "price": 149,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Women-Organic-Dungaree-Irwine-Whale-Blue-fullfront_bf00eda9-ef26-4dd0-a0a6-ff795cc362b2_346x498.jpg?v=1600776858",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Women-Organic-Dungaree-Irwine-Whale-Blue_5e2902b2-714c-4ce6-b90d-5d07b333c712_346x498.jpg?v=1600776858"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Luca Short - Terra",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/luca-short-terra",
+            "price": 89,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Luca-Short-Terra-Fullfront_346x498.jpg?v=1611739388",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Luca-Short-Terra-Halffront_346x498.jpg?v=1611739388"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Luca Short - Undyed",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/luca-short-undyed",
+            "price": 89,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Luca-Short-Undyed-Fullfront-1_346x498.jpg?v=1611739475",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Luca-Short-Undyed-Halffront_346x498.jpg?v=1611739475"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Luca Short - Olive",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/luca-short-olive",
+            "price": 89,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Luca-Short-Olive-Fullfront_346x498.jpg?v=1611739279",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Luca-Short-Olive-Halffront_346x498.jpg?v=1611739279"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Simon Short - Pure Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/simon-short-pure-blue",
+            "price": 89,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Ethical-Jeans-Simon-Short-Pure-Blue-Fullfront_346x498.jpg?v=1606315010",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Ethical-Jeans-Simon-Short-Pure-Blue-Halffront_346x498.jpg?v=1606315010"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Simon Short - O3 Grey",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/simon-short-o3-grey",
+            "price": 89,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Man-Ethical-Jeans-Simon-Shorts-O3-Blue-Grey-Front_346x498.jpg?v=1599749321",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Man-Ethical-Jeans-Simon-Shorts-O3-Blue-Grey-halffront_346x498.jpg?v=1602017233"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Louie Short - Pure Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/louie-short-pure-blue",
+            "price": 89,
+            "categories": [
+                "men/bottoms"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Man-Ethical-Jeans-Louie-Shorts-Pure-blue-front_346x498.jpg?v=1599749315",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Man-Ethical-Jeans-Louie-Shorts-Pure-blue-halffront_346x498.jpg?v=1602017380"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Tyler Jacket - Heavy Stone",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/tyler-jacket-heavy-stone",
+            "price": 119,
+            "categories": [
+                "men/jackets"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Unisex-Sustainable-Jackets-Tyler-Jacket-Heavy-Stone-Fullfront-Recovered_346x498.jpg?v=1606314989",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Tyler-Jacket-Heavy-Stone-Fullfront_346x498.jpg?v=1606314989"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Tyler Jacket - Strong Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/tyler-jacket-strong-blue",
+            "price": 119,
+            "categories": [
+                "men/jackets"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Tyler-Jacket-Strong-Blue-Fullfront_346x498.jpg?v=1606315146",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Eco-Jeans-Tyler-Jacket-Strong-Blue-Fullfront_346x498.jpg?v=1606315146"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Alex Parker - Whale Blue",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/alex-parker-whale-blue",
+            "price": 149,
+            "categories": [
+                "men/jackets"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Sustainable-Parker-Alex-whale-blue-fullfront_9abe8fc5-8f78-49a7-90fb-811146e0c5a8_346x498.jpg?v=1600777164",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Parker-Alex-whale-blue-detail_fb81b3b6-faa9-4125-8ce7-1cce075f10f2_346x498.jpg?v=1600777164"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Alex Parker - Dip Black",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/alex-parker-dip-black",
+            "price": 149,
+            "categories": [
+                "men/jackets"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Sustainable-Parker-Alex-dip-black-fullfront_b899c34c-82bd-4c87-a632-5ec242c12b36_346x498.jpg?v=1600777190",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Men-Sustainable-Parker-Alex-dip-black-detail_80437aac-c114-44f4-accc-76c74220bc1f_346x498.jpg?v=1600777190"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Jodi Jacket - Undyed",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/jodi-jacket-undyed",
+            "price": 129,
+            "categories": [
+                "men/jackets"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Unisex-Sustainable-Jackets-Tyler-Jacket-Undyed-Fullfront-Recovered_346x498.jpg?v=1606315102",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Eco-Jeans-Jodi-Jacket-Undyed-Fullfront_346x498.jpg?v=1606315102"
+            ]
+        },
+        {
+            "uuid": null,
+            "name": "Toto bag",
+            "brand": "MUD Jeans",
+            "link": "https://mudjeans.eu/collections/men/products/toto-bag",
+            "price": 29,
+            "categories": [
+                "men/tote-bags"
+            ],
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/tote-Fullbodywomen-6_346x498.jpg?v=1606315286",
+                "https://cdn.shopify.com/s/files/1/0432/6427/8679/products/tote-Fullbodywomen-2_346x498.jpg?v=1606315286"
+            ]
+        }
+    ]
+}

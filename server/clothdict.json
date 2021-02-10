@@ -39,7 +39,8 @@
         "veste",
         "manteau",
         "parka",
-        "coat"
+        "coat",
+        "parker"
     ],
     "caps-and-beanies": [
         "casquette",
@@ -58,7 +59,6 @@
         "long.?johns",
         "culotte",
         "panties"
-
     ],
     "swim-shorts": [
         "swim",
