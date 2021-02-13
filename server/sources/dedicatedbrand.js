@@ -91,7 +91,7 @@ module.exports.scrape = async (url, debug) => {
         p.name = product.name;
         p.brand = "DEDICATED";
         p.link = `${url}/${product.canonicalUri}`;
-        p.price = product.price.priceAsNumber;
+        p.price = parseInt(product.price.priceAsNumber);
         p.categories = [];
         Object.keys(categories).forEach(key => {
           let k = (key.match(new RegExp("/", "g")) || []).length;
