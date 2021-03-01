@@ -45,7 +45,7 @@ const allScrape = async () => {
 
 // uuid, name, brand, link, price, categories, images
 
-shopScrape('https://www.dedicatedbrand.com');
+//shopScrape('https://www.dedicatedbrand.com');
 //shopScrape('https://mudjeans.eu');
 //shopScrape('https://adresse.paris');
 
