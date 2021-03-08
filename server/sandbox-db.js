@@ -1,64 +1,38 @@
 /* eslint-disable no-console, no-process-exit */
-const dedicatedbrand = require('./sources/dedicatedbrand');
-const loom = require('./sources/loom');
 const db = require('./db');
+const { parseDomain, fromUrl } = require('parse-domain');
+const sources = require('require-all')(`${__dirname}/sources`);
 
-async function sandbox () {
+async function sandbox(link) {
   try {
     let products = [];
-    let pages = [
-      'https://www.dedicatedbrand.com/en/men/basics',
-      'https://www.dedicatedbrand.com/en/men/sale'
-    ];
+    const { 'domain': source } = parseDomain(fromUrl(link));
+    const pages = await sources[source].pages(link);
 
-    console.log(`🕵️‍♀️  browsing ${pages.length} pages with for...of`);
+    console.log(`\nSC > browsing ${pages.length} pages:\n`);
+    console.log(pages);
 
-    // Way 1 with for of: we scrape page by page
-    for (let page of pages) {
-      console.log(`🕵️‍♀️  scraping ${page}`);
-
-      let results = await dedicatedbrand.scrape(page);
-
-      console.log(`👕 ${results.length} products found`);
-
-      products.push(results);
-    }
-
-    pages = [
-      'https://www.loom.fr/collections/hauts',
-      'https://www.loom.fr/collections/bas'
-    ];
-
-    console.log('\n');
-
-    console.log(`🕵️‍♀️  browsing ${pages.length} pages with Promise.all`);
-
-    const promises = pages.map(loom.scrape);
+    const promises = pages.map(page => sources[source].scrape(page));
     const results = await Promise.all(promises);
 
-    console.log(`👕 ${results.length} results of promises found`);
-    console.log(`👕 ${results.flat().length} products found`);
+    console.log(`\nSC > ${results.length} results of promises found`);
+    console.log(`SC > ${results.flat().length} products found`);
 
     products.push(results.flat());
     products = products.flat();
 
-    console.log('\n');
-
-    console.log(`👕 ${products.length} total of products found`);
-
-    console.log('\n');
+    console.log(`SC > ${products.length} total of products found\n`);
 
     const result = await db.insert(products);
 
-    console.log(`💽  ${result.insertedCount} inserted products`);
+    console.log(`DB > ${result.insertedCount} inserted products\n`);
 
+    /*
     console.log('\n');
-
-    console.log('💽  Find Loom products only');
-
+    console.log('DB > Find Loom products only');
     const loomOnly = await db.find({'brand': 'loom'});
-
     console.log(loomOnly);
+    */
 
     db.close();
   } catch (e) {
@@ -66,4 +40,4 @@ async function sandbox () {
   }
 }
 
-sandbox();
+sandbox('https://adresse.paris/');

@@ -3,13 +3,13 @@ const fs = require('fs');
 const index = require('./index');
 const brands = require('../server/brands.json');
 
-const shopScrape = async (eshop, debug = false) => {
+const shopScrape = async eshop => {
   try {
     console.log(`Browsing ${eshop}`);
     if (debug) {
       console.log('\n/ DEBUG ON\n');
     }
-    const res = await index(eshop, debug);
+    const res = await index(eshop);
     if (debug) {
       console.log(res);
     }
@@ -18,7 +18,7 @@ const shopScrape = async (eshop, debug = false) => {
     console.error(e);
     process.exit(1);
   }
-}
+};
 
 const allScrape = async () => {
   var json = [];
@@ -27,7 +27,7 @@ const allScrape = async () => {
       let eshop = brands[i].brand
       let url = brands[i].link;
       console.log(`Browsing ${eshop}`);
-      let res = await index(url, false);
+      let res = await index(url);
       if (res != null) {
         json = json.concat(res);
       }
@@ -41,9 +41,9 @@ const allScrape = async () => {
     console.error(e);
     process.exit(1);
   }
-}
+};
 
-// uuid, name, brand, link, price, categories, images
+// _id, name, brand, link, price, categories, images
 
 //shopScrape('https://www.dedicatedbrand.com');
 //shopScrape('https://mudjeans.eu');

@@ -1,8 +1,8 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 const { parseDomain, fromUrl } = require('parse-domain');
-const fs = require('fs');
 const clothDict = require('../clothdict.json');
+const { 'v5': uuidv5 } = require('uuid');
 
 //to put at the end of urls to load every products
 const expander = '?n=999';
@@ -16,30 +16,13 @@ const searchDict = (str, arr, gender = 'unisex', dict = clothDict) => {
       arr.push(`${gender}/${key}`);
     }
   });
-}
-
-const pagesLoad = (url, data) => {
-  const $ = cheerio.load(data);
-
-  return $('.cbp-hrmenu .cbp-hrmenu-tab.cbp-hrmenu-tab-5')
-    .map((i, element) => {
-      const link = `${$('a', element).attr('href')}`;
-      const name = $('a', element)
-        .find('.cbp-tab-title')
-        .text()
-        .trim();
-      return { type: 'unisex', name, link: link + expander };
-    })
-    .get();
-}
+};
 
 const productsLoad = (url, data, type = 'unisex') => {
   const $ = cheerio.load(data);
 
   return $('.product_list .product-container')
     .map((i, element) => {
-      const uuid = null;
-
       const name = $(element)
         .find('.product-name')
         .first()
@@ -55,6 +38,8 @@ const productsLoad = (url, data, type = 'unisex') => {
       const link = $(element)
         .find('.product-name')
         .attr('href');
+
+      const _id = uuidv5(link, uuidv5.URL);
 
       const price = parseInt(
         $(element)
@@ -83,7 +68,7 @@ const productsLoad = (url, data, type = 'unisex') => {
             .attr('data-rollover'));
         });
 
-      return { uuid, name, brand, link, price, categories, images };
+      return { _id, name, brand, link, price, categories, images };
     })
     .get();
 };
@@ -97,34 +82,29 @@ const scraping = async url => {
     console.error(status);
     return null;
   }
-}
+};
 
-module.exports.scrape = async (url, debug) => {
-  const shorturl = `https://${fromUrl(url)}`;
-  if (debug) {
-    const pageData = await scraping(url);
-    const productsData = await scraping(url);
-    const pages = pagesLoad(shorturl, pageData);
-    const products = productsLoad(shorturl, productsData);
-    return pages.concat(products);
-  } else {
-    var json = [];
-    const data = await scraping(url);
-    const pages = pagesLoad(shorturl, data);
-    for (let i = 0; i < pages.length; i++) {
-      let pageData = await scraping(pages[i].link);
-      let pageType = pages[i].type;
-      let products = productsLoad(shorturl, pageData, pageType);
-      json = json.concat(products);
-    }
-    const file = JSON.stringify({ data: json }, null, 4);
-    try {
-      fs.writeFileSync("./sources/$adresse.json", file);
-      console.log('JSON saved');
-      return json;
-    } catch (err) {
-      console.error(err);
-      return null;
-    }
-  }
-}
+module.exports.pages = async url => {
+  const data = await scraping(url);
+  const $ = cheerio.load(data);
+  return $('.cbp-hrmenu .cbp-hrmenu-tab.cbp-hrmenu-tab-5')
+    .map((i, element) => {
+      const link = `${$('a', element).attr('href')}`;
+      const name = $('a', element)
+        .find('.cbp-tab-title')
+        .text()
+        .trim();
+      return { type: 'unisex', name, link: link + expander };
+    })
+    .get();
+};
+
+module.exports.scrape = async page => {
+  var json = [];
+  let pageData = await scraping(page.link);
+  let pageType = page.type;
+  let shorturl = `https://${fromUrl(page.link)}`;
+  let products = productsLoad(shorturl, pageData, pageType);
+  json = json.concat(products);
+  return json;
+};

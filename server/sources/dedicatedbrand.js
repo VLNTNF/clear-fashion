@@ -1,7 +1,7 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 const { parseDomain, fromUrl } = require('parse-domain');
-const fs = require('fs');
+const { 'v5': uuidv5 } = require('uuid');
 
 //type in url
 const typeSite = ["women", "men", "kids"];
@@ -26,7 +26,7 @@ const pages = (url, data) => {
       }
     })
     .get();
-}
+};
 
 const products = (url, data) => {
   const $ = cheerio.load(data);
@@ -75,8 +75,13 @@ module.exports.scrape = async (url, productsScrape = true) => {
 };
 */
 
-module.exports.scrape = async (url, debug) => {
-  const response = await axios(`${url}/en/loadfilter`);
+module.exports.pages = async url => {
+  return [`https://${fromUrl(url)}/en/loadfilter`]
+};
+
+module.exports.scrape = async url => {
+  console.log(`SC > browsing ${url}`)
+  const response = await axios(url);
   const { data, status } = response;
 
   if (status >= 200 && status < 300) {
@@ -87,10 +92,10 @@ module.exports.scrape = async (url, debug) => {
     products.forEach(product => {
       if (!Array.isArray(product) && product.price.soldout == false) {
         let p = {};
-        p.uuid = null;
         p.name = product.name;
         p.brand = "DEDICATED";
         p.link = `${url}/${product.canonicalUri}`;
+        p._id = uuidv5(p.link, uuidv5.URL);
         p.price = parseInt(product.price.priceAsNumber);
         p.categories = [];
         Object.keys(categories).forEach(key => {
@@ -103,17 +108,10 @@ module.exports.scrape = async (url, debug) => {
         json.push(p);
       }
     });
-    const file = JSON.stringify({ data: json }, null, 4);
-    try {
-      fs.writeFileSync("./sources/$dedicated.json", file);
-      console.log('JSON saved');
-      return json;
-    } catch (err) {
-      console.error(err);
-      return null;
-    }
+    return json;
   }
   else {
     console.error(status);
+    return null;
   }
 };

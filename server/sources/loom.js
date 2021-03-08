@@ -1,14 +1,9 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
-const {'v5': uuidv5} = require('uuid');
+const { 'v5': uuidv5 } = require('uuid');
 
-/**
- * Parse webpage restaurant
- * @param  {String} data - html response
- * @return {Object} restaurant
- */
 const parse = data => {
-  const $ = cheerio.load(data, {'xmlMode': true});
+  const $ = cheerio.load(data, { 'xmlMode': true });
 
   return $('.product-grid__item')
     .map((i, element) => {
@@ -40,13 +35,12 @@ const parse = data => {
 
 module.exports.scrape = async url => {
   const response = await axios(url);
-  const {data, status} = response;
+  const { data, status } = response;
 
   if (status >= 200 && status < 300) {
     return parse(data);
   }
 
   console.error(status);
-
   return null;
 };

@@ -1,64 +1,49 @@
 require('dotenv').config();
-const {MongoClient} = require('mongodb');
+const { MongoClient } = require('mongodb');
 const fs = require('fs');
 
-const MONGODB_DB_NAME = 'clearfashion';
-const MONGODB_COLLECTION = 'products';
-const MONGODB_URI = process.env.MONGODB_URI;
+const MONGODB_DB_NAME = `${process.env.DB_NAME}`;
+const MONGODB_COLLECTION = `${process.env.DB_COLLECTION}`;
+const MONGODB_URI = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${process.env.DB_CLUSTER}?retryWrites=true&writeConcern=majority`;
 
 let client = null;
 let database = null;
 
-/**
- * Get db connection
- * @type {MongoClient}
- */
 const getDB = module.exports.getDB = async () => {
   try {
     if (database) {
       return database;
     }
 
-    client = await MongoClient.connect(MONGODB_URI, {'useNewUrlParser': true});
+    client = await MongoClient.connect(MONGODB_URI, { 'useNewUrlParser': true });
     database = client.db(MONGODB_DB_NAME);
 
-    console.log('💽  Connected');
+    console.log('\nDB > Connected');
 
     return database;
   } catch (error) {
-    console.error('🚨 MongoClient.connect...', error);
+    console.error('DB > MongoClient.connect...', error);
     return null;
   }
 };
 
-/**
- * Insert list of products
- * @param  {Array}  products
- * @return {Object}
- */
 module.exports.insert = async products => {
   try {
     const db = await getDB();
     const collection = db.collection(MONGODB_COLLECTION);
-    // More details
-    // https://docs.mongodb.com/manual/reference/method/db.collection.insertMany/#insert-several-document-specifying-an-id-field
-    const result = await collection.insertMany(products, {'ordered': false});
+    const result = await collection.insertMany(products, { 'ordered': false });
 
     return result;
   } catch (error) {
-    console.error('🚨 collection.insertMany...', error);
+    console.error('DB > collection.insertMany...', error);
     fs.writeFileSync('products.json', JSON.stringify(products));
+    console.log('\nDB > JSON locally saved');
     return {
       'insertedCount': error.result.nInserted
     };
   }
 };
 
-/**
- * Find products based on query
- * @param  {Array}  query
- * @return {Array}
- */
 module.exports.find = async query => {
   try {
     const db = await getDB();
@@ -67,18 +52,27 @@ module.exports.find = async query => {
 
     return result;
   } catch (error) {
-    console.error('🚨 collection.find...', error);
+    console.error('DB > collection.find...', error);
     return null;
   }
 };
 
-/**
- * Close the connection
- */
+module.exports.aggregate = async query => {
+  try {
+    const db = await getDB();
+    const collection = db.collection(MONGODB_COLLECTION);
+    const result = await collection.aggregate(query).toArray();
+    return result;
+  } catch (error) {
+    console.error('DB > collection.find...', error);
+    return null;
+  }
+};
+
 module.exports.close = async () => {
   try {
     await client.close();
   } catch (error) {
-    console.error('🚨 MongoClient.close...', error);
+    console.error('DB > MongoClient.close...', error);
   }
 };
