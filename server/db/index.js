@@ -44,13 +44,26 @@ module.exports.insert = async products => {
   }
 };
 
-module.exports.find = async query => {
+module.exports.find = async r => {
   try {
     const db = await getDB();
     const collection = db.collection(MONGODB_COLLECTION);
-    const result = await collection.find(query).toArray();
-
-    return result;
+    var res = {};
+    res.limit = 0;
+    var find = {};
+    if(r.brand){
+      find.brand = r.brand;
+    }
+    if(r.price){
+      find.price = {$lt:parseInt(r.price)};
+    }
+    if(r.limit){
+      res.limit = parseInt(r.limit);
+    }
+    const req = await collection.find(find).limit(res.limit).sort({'price':1}).toArray();
+    res.total = req.length;
+    res.results = req;
+    return res;
   } catch (error) {
     console.error('DB > collection.find...', error);
     return null;
