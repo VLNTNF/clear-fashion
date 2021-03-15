@@ -19,6 +19,16 @@ app.get('/', (request, response) => {
   response.send({'ack': true});
 });
 
+app.get('/products/:id', async (request, response) => {
+  request.query._id=request.params.id;
+  let result = await db.find(request.query);
+  if(result.results.length > 0){
+    response.send(result.results);
+  } else {
+    response.send({'ack': 'ID not found'});
+  }
+});
+
 app.get('/products/search', async (request, response) => {
   let result = await db.find(request.query);
   console.log(result);

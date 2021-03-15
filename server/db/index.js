@@ -49,8 +49,11 @@ module.exports.find = async r => {
     const db = await getDB();
     const collection = db.collection(MONGODB_COLLECTION);
     var res = {};
-    res.limit = 0;
+    res.limit = 12;
     var find = {};
+    if(r._id){
+      find._id = r._id;
+    }
     if(r.brand){
       find.brand = r.brand;
     }
