@@ -19,7 +19,7 @@ app.get('/', (request, response) => {
   response.send({'ack': true});
 });
 
-app.get('/products/:id', async (request, response) => {
+app.get('/products/id/:id', async (request, response) => {
   request.query._id=request.params.id;
   let result = await db.find(request.query);
   if(result.results.length > 0){
