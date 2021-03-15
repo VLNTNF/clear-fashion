@@ -73,6 +73,18 @@ module.exports.find = async r => {
   }
 };
 
+module.exports.distinct = async query => {
+  try {
+    const db = await getDB();
+    const collection = db.collection(MONGODB_COLLECTION);
+    const result = await collection.distinct(query).toArray();
+    return result;
+  } catch (error) {
+    console.error('DB > collection.distinct...', error);
+    return null;
+  }
+};
+
 module.exports.aggregate = async query => {
   try {
     const db = await getDB();
@@ -80,7 +92,7 @@ module.exports.aggregate = async query => {
     const result = await collection.aggregate(query).toArray();
     return result;
   } catch (error) {
-    console.error('DB > collection.find...', error);
+    console.error('DB > collection.aggregate...', error);
     return null;
   }
 };
