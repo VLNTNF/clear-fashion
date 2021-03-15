@@ -77,7 +77,7 @@ module.exports.distinct = async query => {
   try {
     const db = await getDB();
     const collection = db.collection(MONGODB_COLLECTION);
-    const result = await collection.distinct(query).toArray();
+    const result = await collection.distinct(query);
     return result;
   } catch (error) {
     console.error('DB > collection.distinct...', error);
