@@ -6,23 +6,13 @@
     <link href="style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>Clear fashion</h1>
+    <header>
+      <h1>Clear fashion</h1>
+    </header>
     <div class="box">
       <section class="one" id="options">
         <h2>Filters</h2>
         <div class="box">
-          <div id="show">
-            <label for="show-select">Show:</label>
-            <select name="show" id="show-select">
-              <option value="12">12</option>
-              <option value="24">24</option>
-              <option value="48">48</option>
-            </select>
-          </div>
-          <div id="page">
-            <label for="page-select">Page:</label>
-            <select name="page" id="page-select"> </select>
-          </div>
           <div id="brand">
             <label for="brand-select">Brand:</label>
             <select name="brand" id="brand-select"> </select>
@@ -31,11 +21,8 @@
         <div id="sort">
           <label for="sort-select">Sort:</label>
           <select name="sort" id="sort-select">
-            <option value="no-sort">No sort</option>
             <option value="price-asc">Cheaper</option>
             <option value="price-desc">Expensive</option>
-            <option value="date-asc">Recently released</option>
-            <option value="date-desc">Anciently released</option>
           </select>
         </div>
         <span>Select:</span>
@@ -50,22 +37,6 @@
               </span>
               <span>Reasonable price</span>
             </label>
-          </div>
-          <div id="by-date">
-            <input class="inp-cbx" id="date-checkbox" type="checkbox" name="recently-released"/>
-            <label class="cbx" for="date-checkbox">
-              <span>
-                <svg width="12px" height="10px">
-                  <use xlink:href="#check"></use>
-                </svg>
-              </span>
-              <span>Recently released</span>
-            </label>
-            <svg class="inline-svg">
-              <symbol id="check" viewbox="0 0 12 10">
-                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-              </symbol>
-            </svg>
           </div>
         </div>
       </section>

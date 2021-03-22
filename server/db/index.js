@@ -51,6 +51,7 @@ module.exports.find = async r => {
     var res = {};
     res.limit = 12;
     var find = {};
+    var sort = 1;
     if(r._id){
       find._id = r._id;
     }
@@ -63,7 +64,10 @@ module.exports.find = async r => {
     if(r.limit){
       res.limit = parseInt(r.limit);
     }
-    const req = await collection.find(find).limit(res.limit).sort({'price':1}).toArray();
+    if(r.sort === 'des'){
+      sort = -1;
+    }
+    const req = await collection.find(find).limit(res.limit).sort({'price':sort}).toArray();
     res.total = req.length;
     res.results = req;
     return res;
