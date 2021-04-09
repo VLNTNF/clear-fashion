@@ -1,100 +1,80 @@
 'use strict';
 
-const api_url = 'https://server-clear-fashion-git-master-vlntnf.vercel.app';
+const api_url = 'https://server-clear-fashion.vercel.app';
 
 // current products on the page
 let currentProducts = [];
-let currentPagination = {};
-let currentFilters = [];
+let currentFilters = ['All', 'price-asc'];
 
 // inititiate selectors
 const selectBrand = document.querySelector('#brand-select');
 const sectionProducts = document.querySelector('#products');
 const selectSort = document.querySelector('#sort-select');
-const checkDate = document.querySelector('#date-checkbox');
-const checkPrice = document.querySelector('#price-checkbox');
 const spanNbProducts = document.querySelector('#nbProducts');
-const spanNbNewProducts = document.querySelector('#nbNewProducts');
-const spanP50 = document.querySelector('#p50');
-const spanP90 = document.querySelector('#p90');
-const spanP95 = document.querySelector('#p95');
-const spanLastReleased = document.querySelector('#last-released');
+
 
 /**
  * Set global value
  */
-const setCurrentProducts = ({ result, filters }) => {
+const setCurrentProducts = result => {
   currentProducts = result;
-  currentFilters = filters;
 };
+const setCurrentFilters = result => {
+  currentFilters = result;
+};
+
+
+/**
+ * Load products and render
+ */
+const loader = async () => {
+  await fetchProducts();
+  await render();
+}
+
 
 /**
  * Fetch from API
  */
-const fetchProducts = async (filters = ['all', 'no-sort', false]) => {
+const fetchProducts = async () => {
   try {
     let brand = '';
-    if (filters[0] !== 'all') {
-      brand = `&brand=${filters[0]}`
+    if (currentFilters[0] !== 'All') {
+      brand = `&brand=${currentFilters[0]}`
     }
-    const response = await fetch(`${api_url}/products/search?limit=0${brand}`);
+    let sort = '';
+    if (currentFilters[1] === 'price-desc') {
+      brand = `&sort=des`
+    }
+    const response = await fetch(`${api_url}/products/search?limit=0${brand}${sort}`);
     const body = await response.json();
     if (!body.results) {
       console.error(body);
-      return { currentProducts, currentFilters };
     }
-    //body.data.filters = filters;
-    let result = body.results;
-    return { result, filters };
+    // change current products
+    //setCurrentProducts(body.results);
+    currentProducts = body.results;
   } catch (error) {
     console.error(error);
-    return { currentProducts, currentFilters };
   }
 };
 
-/**
- * Declaration of filters' functions
- */
-const filtering = (products, filters) => {
-  switch (filters[1]) {
-    case 'price-asc':
-      sortByKey(products, 'price');
-      break;
-    case 'price-desc':
-      sortByKey(products, 'price', false);
-      break;
-    default:
-      break;
-  }
-  if (filters[0] != 'all') {
-    products = products.filter(x => x.brand === filters[0]);
-  }
-  if (filters[2]) {
-    products = products.filter(x => x.price < 50);
-  }
-  return [...products];
-}
-
-function sortByKey(array, key, increasing = true) {
-  return array.sort((a, b) => {
-    let x = a[key];
-    let y = b[key];
-    if (increasing) {
-      return ((x < y) ? -1 : ((x > y) ? 1 : 0));
-    }
-    return ((x > y) ? -1 : ((x < y) ? 1 : 0));
-  });
-}
 
 /**
  * Declaration of all renders
  */
-const renderProducts = (products, filters) => {
+const render = () => {
+  renderProducts(currentProducts);
+  renderIndicators(currentProducts);
+  renderBrands(currentFilters);
+  renderSort(currentFilters);
+};
+
+const renderProducts = (products) => {
   const fragment = document.createDocumentFragment();
   const table = document.createElement('table');
   const thead = document.createElement('thead');
   const tbody = document.createElement('tbody');
-  //const template = filtering(products, filters)
   const template = products
     .map(product => {
       return `
@@ -120,7 +100,7 @@ const renderProducts = (products, filters) => {
   sectionProducts.appendChild(fragment);
 };
 
-const renderBrands = async (products, filters) => {
+const renderBrands = async (filters) => {
   let brands = [];
   try {
     const response = await fetch(
@@ -130,7 +110,7 @@ const renderBrands = async (products, filters) => {
   } catch (error) {
     console.error(error);
   }
-  const unique_brands = ['all'].concat(brands);
+  const unique_brands = ['All'].concat(brands);
   const options = Array.from(
     unique_brands, x => `<option value="${x}">${x}</option>`
   ).join('');
@@ -140,70 +120,35 @@ const renderBrands = async (products, filters) => {
 };
 
 const renderSort = filters => {
-  const options = ['no-sort', 'price-asc', 'price-desc'];
-  selectSort.selectedIndex = options.indexOf(filters[1]);
+  if (filters[1] === 'price-asc') {
+    selectSort.innerHTML = "Ascending";
+  } else {
+    selectSort.innerHTML = "Descending";
+  }
 };
 
-const renderCheck = filters => {
-  checkPrice.checked = filters[2];
+const renderIndicators = products => {
+  spanNbProducts.innerHTML = products.length;
 };
 
-const renderIndicators = (products, filters) => {
-  let filtersSort = [...filters];
-  filtersSort[1] = 'price-asc';
-  let filteredProducts = filtering(products, filtersSort);
-  let len = filteredProducts.length;
-  spanNbProducts.innerHTML = len;
-
-  let filtersNew = [...filters];
-  filtersNew[3] = true;
-  spanNbNewProducts.innerHTML = filtering(products, filtersNew).length;
-
-  spanP50.innerHTML = `${filteredProducts[Math.floor(len * .50)]['price']}€`;
-  spanP90.innerHTML = `${filteredProducts[Math.floor(len * .90)]['price']}€`;
-  spanP95.innerHTML = `${filteredProducts[Math.floor(len * .95)]['price']}€`;
-
-  let filtersReleased = [...filters];
-  filtersReleased[1] = 'date-desc';
-  spanLastReleased.innerHTML = filtering(products, filtersReleased)[0]['released'];
-};
-
-const render = (products, filters) => {
-  renderProducts(products, filters);
-  renderIndicators(products, filters);
-  renderBrands(products, filters);
-  renderSort(filters);
-  renderCheck(filters);
-};
 
 /**
  * Declaration of all listeners
  */
-
 selectBrand.addEventListener('change', event => {
   currentFilters[0] = event.target.value;
-  fetchProducts(currentFilters)
-    .then(setCurrentProducts)
-    .then(() => {
-      render(currentProducts, currentFilters);
-    });
+  loader();
 });
 
-selectSort.addEventListener('change', event => {
-  currentFilters[1] = event.target.value;
-  render(currentProducts, currentFilters);
-});
-
-checkPrice.addEventListener('change', event => {
-  currentFilters[2] = event.target.checked;
-  render(currentProducts, currentFilters);
+selectSort.addEventListener('click', event => {
+  if (selectSort.innerHTML === "Ascending") {
+    currentFilters[1] = "price-desc";
+  } else {
+    currentFilters[1] = "price-asc";
+  }
+  loader();
 });
 
 document.addEventListener('DOMContentLoaded', () =>
-  fetchProducts()
-    .then(setCurrentProducts)
-    .then(() => {
-      console.log(currentProducts);
-      render(currentProducts, currentFilters);
-    })
+  loader()
 );
