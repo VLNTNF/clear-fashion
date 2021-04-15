@@ -14,6 +14,19 @@
   <nav class="search">
     <div class="search-container">
       <div class="search-box">
+        <div id="style">
+          <label>Style:</label>
+          <div class="radio-group">
+            <input type="radio" id="men-style" name="selector" checked><label class="style-label"
+              for="men-style">Men</label><input type="radio" id="women-style" name="selector"><label class="style-label"
+              for="women-style">Women</label><input type="radio" id="kids-style" name="selector"><label
+              class="style-label" for="kids-style">Kids</label>
+          </div>
+        </div>
+        <div id="brand">
+          <label for="brand-select">Brand:</label>
+          <select name="brand" id="brand-select"> </select>
+        </div>
         <div id="cp">
           <label for="zip">Zipcode:</label>
           <input type="text" name="zip" id="zip" placeholder="75000" pattern="[0-9]{5}">
@@ -23,14 +36,6 @@
             <label for="select-select">Select:</label>
             <select name="select" id="select-select" style="width:100%;"></select>
           </div>
-        </div>
-        <div id="type">
-          <label for="type-select">Type:</label>
-          <select name="type" id="type-select">
-            <option value="All">All</option>
-            <option value="etab">School</option>
-            <option value="biblio">Library</option>
-          </select>
         </div>
         <div id="sort">
           <label for="sort-select">Sort:</label>
@@ -47,11 +52,15 @@
     </div>
   </nav>
   <div class="data-info">
-    <span>2309 products - Last updated April 11. 2021 - </span><a href="https://en.clear-fashion.com/evaluation-method">How rating works?</a>
+    <span>1303 products - Last updated April 11. 2021 - </span><a
+      href="https://en.clear-fashion.com/evaluation-method">How rating works?</a>
   </div>
   <section class="content">
+    <div class="loader-container" id="loader">
+      <div class="loader"></div>
+    </div>
     <div id="products" class="products-container">
-        <!--
+      <!--
         <div class="product" id="kjdozijikdoàqikdoqzk">
           <a class="product-img" href="https://mudjeans.eu/collections/women-jeans/products/relax-rose-sun-stripe">
             <img
@@ -79,36 +88,9 @@
     </div>
     <div class="load-container" id="load-more-container"></div>
   </section>
-
-  <!--
-  <div class="container">
-    <div class="box">
-      <section class="one" id="options">
-        <h2>Filters</h2>
-        <div class="box">
-          <div id="brand">
-            <label for="brand-select">Brand:</label>
-            <select name="brand" id="brand-select"> </select>
-          </div>
-        </div>
-        <div id="sort">
-          <label for="sort-select">Sort:</label>
-          <button id="sort-select">Ascending</button>
-        </div>
-      </section>
-      <section class="two" id="indicators">
-        <h2>Indicators on this page</h2>
-        <ul>
-          <li>
-            <span>Number of products:</span>
-            <span id="nbProducts">0</span>
-          </li>
-        </ul>
-      </section>
-    </div>
-  </div>
--->
-  <script type="text/javascript" charset="UTF-8" src="portfolio.js"></script>
   <footer><span>Made with 💙 by </span><a href="https://github.com/VLNTNF/clear-fashion">VLNTNF</a></footer>
+  <script type="text/javascript" charset="UTF-8" src="brands.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="index.js"></script>
 </body>
+
 </html>

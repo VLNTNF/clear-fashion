@@ -41,5 +41,11 @@ app.get('/products/brands', async (request, response) => {
   response.send(result);
 });
 
+app.get('/products/types', async (request, response) => {
+  let result = await db.distinct('brand');
+  console.log(result);
+  response.send(result);
+});
+
 app.listen(PORT);
 console.log(`Running on port ${PORT}`);
