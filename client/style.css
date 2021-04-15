@@ -98,38 +98,38 @@
   display:flex;
   align-items: center;
   border-radius: var(--radius);
+  margin-top: 8px;
+  margin-right: 6px;
   padding: 3px 5px 5px 5px;
 }
 
+
 .price-container {
-  margin-top: 8px;
-  margin-right: 6px;
   background-color: var(--text-main);
+  padding: 0px 8px 3px;
 }
 
 .product-price {
+  font-weight: bolder;
   color: var(--background-body);
-  line-height: 1;
 }
 
 .quality-container {
-  margin-top: 8px;
-  margin-right: 6px;
   border-width: 1px;
   border-style: solid;
   border-color: var(--text-main);
+  padding: 0px 6px 3px;
 }
 
 .quality-name {
-  padding-left: 7px;
-  line-height: 1;
+  padding-left: 6px;
 }
 
 .quality-indicator {
-  margin-top: 2px;
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
+  margin-top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
 }
 
 .excellent {
@@ -232,7 +232,7 @@ label + input[type=radio] + label {
 
 .pagination {
   padding: 8px 10px 8px 10px;
-  margin-left: 6px;
+  margin: 0 0 0 6px;
   background-color: var(--text-main);
   color: var(--background-body);
   font-weight: bolder;
