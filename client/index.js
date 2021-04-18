@@ -1,6 +1,5 @@
 'use strict';
-//const api_url = 'https://server-clear-fashion.vercel.app';
-const api_url = 'https://022b06307c81.ngrok.io';
+const api_url = 'https://server-clear-fashion.vercel.app';
 
 /**
  * Current
