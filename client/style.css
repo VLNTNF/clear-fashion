@@ -152,6 +152,19 @@
   background-color : #858585
 }
 
+/* no result */
+.no-result span {
+  font-size: 1.5em;
+  display: block;
+  text-align: center;
+}
+
+.no-result img {
+  display: block;
+  height: 150px;
+  padding-top: 30px;
+}
+
 /* search */
 .search-container {
   padding: 10px;
@@ -175,9 +188,21 @@
   flex-wrap: wrap;
 }
 
-.box-select {
-  flex-grow: 1;
-  margin-right:6px;
+.wide-select {
+  width: 153px;
+}
+
+.tight-select {
+  width: 60px;
+}
+
+#price input {
+  display: inline-block;
+}
+
+#search-button {
+  color: var(--text-bright);
+  background: var(--background-body);
 }
 
 input[type='text'] {
@@ -288,7 +313,7 @@ footer {
   overflow: hidden;
 }
 
-/* loader */
+/* loading */
 .loader-container {
   margin-top: 100px;
   margin-bottom: 100px;

@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>👕 Clear Fahion | Environmentally & human-friendly clothes</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
@@ -23,23 +23,24 @@
               class="style-label" for="kids-style">Kids</label>
           </div>
         </div>
+        <div id="type">
+          <label for="type-select">Type:</label>
+          <select class="wide-select" name="type" id="type-select"> </select>
+        </div>
         <div id="brand">
           <label for="brand-select">Brand:</label>
-          <select name="brand" id="brand-select"> </select>
+          <select class="wide-select" name="brand" id="brand-select"> </select>
         </div>
-        <div id="cp">
-          <label for="zip">Zipcode:</label>
-          <input type="text" name="zip" id="zip" placeholder="75000" pattern="[0-9]{5}">
-        </div>
-        <div class="box-select">
-          <div id="select">
-            <label for="select-select">Select:</label>
-            <select name="select" id="select-select" style="width:100%;"></select>
+        <div id="price-container">
+          <label for="price">Price:</label>
+          <div id="price">
+            <input type="text" name="min" id="min-text" placeholder="Min" pattern="[0-9]*"><input type="text" name="max"
+              id="max-text" placeholder="Max" pattern="[0-9]*">
           </div>
         </div>
         <div id="sort">
           <label for="sort-select">Sort:</label>
-          <select name="sort" id="sort-select">
+          <select class="tight-select" name="sort" id="sort-select">
             <option value="asc">🡥</option>
             <option value="des">🡦</option>
           </select>
@@ -59,33 +60,7 @@
     <div class="loader-container" id="loader">
       <div class="loader"></div>
     </div>
-    <div id="products" class="products-container">
-      <!--
-        <div class="product" id="kjdozijikdoàqikdoqzk">
-          <a class="product-img" href="https://mudjeans.eu/collections/women-jeans/products/relax-rose-sun-stripe">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Relax-Rose-Sun-Stripe-Halffront-15_1_346x498.jpg?v=1606315297"
-              alt="Relax Rose - Sun Stripe">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0432/6427/8679/products/Woman-Ethical-Jeans-Relax-Rose-Sun-Stripe-fullfront-5_1_346x498.jpg?v=1606315297"
-              class="img-two" alt="Relax Rose - Sun Stripe">
-          </a>
-          <div class="product-info">
-            <span class="product-brand">DEDICATED</span>
-            <span class="product-name">Test sdqqs ddddddd sds dssss</span>
-            <div class="additional-container">
-              <div class="price-container tile">
-                <span class="product-price">50€</span>
-              </div>
-              <div class="quality-container tile">
-                <div class="quality-indicator"></div>
-                <div class="quality-name"><span>excellent</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        -->
-    </div>
+    <div id="products" class="products-container"></div>
     <div class="load-container" id="load-more-container"></div>
   </section>
   <footer><span>Made with 💙 by </span><a href="https://github.com/VLNTNF/clear-fashion">VLNTNF</a></footer>

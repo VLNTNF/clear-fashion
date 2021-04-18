@@ -44,44 +44,29 @@ module.exports.insert = async products => {
   }
 };
 
-module.exports.find = async r => {
+module.exports.findID = async r => {
   try {
     const db = await getDB();
     const collection = db.collection(MONGODB_COLLECTION);
-    var res = {};
-    res.limit = 12;
     var find = {};
-    var sort = 1;
-    if(r._id){
+    if (r._id) {
       find._id = r._id;
+    } else {
+      find._id = 0;
     }
-    if(r.brand){
-      find.brand = r.brand;
-    }
-    if(r.price){
-      find.price = {$lt:parseInt(r.price)};
-    }
-    if(r.limit){
-      res.limit = parseInt(r.limit);
-    }
-    if(r.sort === 'des'){
-      sort = -1;
-    }
-    const req = await collection.find(find).limit(res.limit).sort({'price':sort}).toArray();
-    res.total = req.length;
-    res.results = req;
-    return res;
+    const req = await collection.find(find).toArray();
+    return req;
   } catch (error) {
     console.error('DB > collection.find...', error);
     return null;
   }
 };
 
-module.exports.distinct = async query => {
+module.exports.distinct = async key => {
   try {
     const db = await getDB();
     const collection = db.collection(MONGODB_COLLECTION);
-    const result = await collection.distinct(query);
+    const result = await collection.distinct(key);
     return result;
   } catch (error) {
     console.error('DB > collection.distinct...', error);
@@ -89,12 +74,80 @@ module.exports.distinct = async query => {
   }
 };
 
-module.exports.aggregate = async query => {
+module.exports.types = async r => {
   try {
+    var reg = '(^men|^unisex)';
+    if (r.style) {
+      if (r.style == 'women') {
+        reg = '(^women|^unisex)';
+      } else if (r.style == 'kids') {
+        reg = '^kids';
+      }
+    }
     const db = await getDB();
     const collection = db.collection(MONGODB_COLLECTION);
-    const result = await collection.aggregate(query).toArray();
-    return result;
+    var agg = [{ '$unwind': { 'path': '$categories' } }, { '$group': { '_id': '$categories' } }, { '$match': { '_id': { '$regex': reg } } }];
+    const result = await collection.aggregate(agg).toArray();
+    var arr = [];
+    result.forEach(x => {
+      arr.push(x._id);
+    });
+    return arr;
+  } catch (error) {
+    console.error('DB > collection.aggregate...', error);
+    return null;
+  }
+};
+
+module.exports.search = async r => {
+  // [{'$unwind':{'path':'$categories'}},{'$match':{'categories':{'$regex':'(^men|^unisex)\/bottoms'},'price':{'$lte':100}}},{'$sort':{'price':-1}},{'$limit':10}]
+  try {
+    var res = {};
+    var match = {};
+    if (r.brand) {
+      match.brand = r.brand;
+    }
+    var style = '(^men|^unisex)';
+    if (r.style) {
+      if (r.style == 'women') {
+        style = '(^women|^unisex)';
+      } else if (r.style == 'kids') {
+        style = '^kids';
+      }
+    }
+    var type = '';
+    if (r.type) {
+      type = `\/${r.type}`;
+    }
+    match.categories = { '$regex': style + type };
+    if (r.min && !r.max) {
+      match.price = { $gte: parseInt(r.min) };
+    } else if (!r.min && r.max) {
+      match.price = { $lte: parseInt(r.max) };
+    } else if (r.min && r.max) {
+      match.price = { $gte: parseInt(r.min), $lte: parseInt(r.max) };
+    }
+    var agg = [{ '$unwind': { 'path': '$categories' } }, { '$match': match }];
+    if (r.sort === 'des') {
+      agg.push({ '$sort': { 'price': -1 } });
+    } else {
+      agg.push({ '$sort': { 'price': 1 } });
+    }
+    if (r.limit) {
+      res.limit = parseInt(r.limit);
+      if (r.limit > 0) {
+        agg.push({ '$limit': res.limit });
+      }
+    } else {
+      res.limit = 12;
+      agg.push({ '$limit': 12 });
+    }
+    const db = await getDB();
+    const collection = db.collection(MONGODB_COLLECTION);
+    const req = await collection.aggregate(agg).toArray();
+    res.total = req.length;
+    res.results = req;
+    return res;
   } catch (error) {
     console.error('DB > collection.aggregate...', error);
     return null;

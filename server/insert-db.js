@@ -3,7 +3,7 @@ const db = require('./db');
 const { parseDomain, fromUrl } = require('parse-domain');
 const sources = require('require-all')(`${__dirname}/sources`);
 
-async function sandbox(link) {
+async function insert(link) {
   try {
     let products = [];
     const { 'domain': source } = parseDomain(fromUrl(link));
@@ -27,17 +27,10 @@ async function sandbox(link) {
 
     console.log(`DB > ${result.insertedCount} inserted products\n`);
 
-    /*
-    console.log('\n');
-    console.log('DB > Find Loom products only');
-    const loomOnly = await db.find({'brand': 'loom'});
-    console.log(loomOnly);
-    */
-
     db.close();
   } catch (e) {
     console.error(e);
   }
 }
 
-sandbox('https://adresse.paris/');
+// insert('https://adresse.paris/');

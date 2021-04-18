@@ -1,23 +1,22 @@
 'use strict';
-const api_url = 'https://server-clear-fashion.vercel.app';
+//const api_url = 'https://server-clear-fashion.vercel.app';
+const api_url = 'https://022b06307c81.ngrok.io';
 
-// current products on the page
-/*
-let currentProducts = [];
-let currentFilters = ['All', 'price-asc'];
-*/
+/**
+ * Current
+ */
 let currentNumber = 0;
 let currentMore = 20;
 let currentProducts = [];
 let currentFilters = [];
 
-
 /**
- * Inititiate selectors
+ * Selectors
  */
 const searchButton = document.getElementById('search-button');
 const selectSort = document.getElementById('sort-select');
 const selectBrand = document.getElementById('brand-select');
+const selectType = document.getElementById('type-select');
 const sectionProducts = document.getElementById('products');
 const sectionLoad = document.getElementById('load-more-container');
 const topButton = document.getElementById("top-button");
@@ -25,18 +24,28 @@ const menStyle = document.getElementById("men-style");
 const womenStyle = document.getElementById("women-style");
 const kidsStyle = document.getElementById("kids-style");
 const loaderDiv = document.getElementById("loader");
+const textMin = document.getElementById("min-text");
+const textMax = document.getElementById("max-text");
 
 /**
  * Set
  */
 const setFilters = () => {
-  currentFilters = [selectBrand.value, selectSort.value];
+  var style = "men";
+  if (womenStyle.checked) {
+    style = "women";
+  } else if (kidsStyle.checked) {
+    style = "kids";
+  }
+  // [0] brand, [1] sort, [2] style, [3] type, [4] min, [5] max
+  currentFilters = [selectBrand.value, selectSort.value, style, selectType.value, textMin.value.replace(/\D/g, ""), textMax.value.replace(/\D/g, "")];
 };
 
 /**
  * Load
  */
 const preload = async () => {
+  await renderTypes();
   await renderBrands();
   await load();
 };
@@ -62,26 +71,37 @@ const fetchProducts = async () => {
     if (currentFilters[0] != 'All') {
       brand = `&brand=${currentFilters[0]}`;
     }
-    console.log(currentFilters[0]);
-    console.log(brand);
     let sort = '';
     if (currentFilters[1] == 'des') {
       sort = `&sort=des`;
     }
-    const response = await fetch(`${api_url}/products/search?limit=0${brand}${sort}`);
+    let style = '';
+    if (currentFilters[2]) {
+      style = `&style=${currentFilters[2]}`;
+    }
+    let type = '';
+    if (currentFilters[3] != 'All') {
+      type = `&type=${currentFilters[3]}`;
+    }
+    let min = '';
+    if (currentFilters[4] != "") {
+      min = `&min=${currentFilters[4]}`;
+    }
+    let max = '';
+    if (currentFilters[5] != "") {
+      max = `&max=${currentFilters[5]}`;
+    }
+    const response = await fetch(`${api_url}/products/search?limit=0${brand}${sort}${style}${type}${min}${max}`);
     const body = await response.json();
     if (!body.results) {
       console.error(body);
     }
-    // change current products
-    //setCurrentProducts(body.results);
     return body.results;
   } catch (error) {
     console.error(error);
   }
   return false;
 };
-
 
 /**
  * Renders
@@ -102,14 +122,14 @@ const renderLoad = () => {
     } else {
       sectionLoad.innerHTML = '<input type="button" class="top-button" onclick="topFunction()" id="top-button" value="▲"></input>';
     }
+    sectionLoad.style.display = "flex";
   } else {
-    sectionLoad.innerHTML = '';
+    sectionLoad.style.display = "none";
   }
 };
 
 const loadMore = () => {
   if (currentProducts.length > currentNumber + currentMore) {
-    console.log(currentProducts.slice(currentNumber, currentNumber + currentMore));
     renderProducts(currentProducts.slice(currentNumber, currentNumber + currentMore));
   } else {
     renderProducts(currentProducts.slice(currentNumber, currentProducts.length));
@@ -120,10 +140,10 @@ const loadMore = () => {
 
 const brandInfo = (b) => {
   let brand = brands[b.toLowerCase()];
-  if(brand) {
+  if (brand) {
     return brand;
   }
-  return {"link": "","overview": "unknown","rating": 0};
+  return { "link": "", "overview": "unknown", "rating": 0 };
 };
 
 const renderProducts = (products) => {
@@ -158,9 +178,7 @@ const renderProducts = (products) => {
     let space = '<div class="product"></div>'.repeat(3);
     sectionProducts.innerHTML = sectionProducts.innerHTML.replace(space, "") + template + space;
   } else {
-    const noresults = document.createElement('span');
-    noresults.innerHTML = "No results !";
-    sectionProducts.appendChild(noresults);
+    sectionProducts.innerHTML = '<div class="no-result"><span>No results!</span><img src="images/sad-white.png"></div>';
   }
 };
 
@@ -181,11 +199,28 @@ const renderBrands = async () => {
   selectBrand.innerHTML = options;
 };
 
-const renderSelect = async (values) => {
+const renderTypes = async () => {
+  let types = [];
+  try {
+    const response = await fetch(
+      `${api_url}/products/types?style=${currentFilters[2]}`
+    );
+    types = await response.json();
+  } catch (error) {
+    console.error(error);
+  }
+  var unique_types = [];
+  types.forEach(x => {
+    let type = x.replace(/.*\//ig, '');
+    if (!unique_types.includes(type)) {
+      unique_types.push(type);
+    }
+  });
+  unique_types.sort();
   const options = Array.from(
-    values, x => `<option value="${x.code_UAI}">${x.nom_ets}</option>`
+    ['All'].concat(unique_types), x => `<option value="${x}">${x.charAt(0).toUpperCase() + x.replaceAll('-', ' ').slice(1)}</option>`
   ).join('');
-  selectSelect.innerHTML = options;
+  selectType.innerHTML = options;
 };
 
 /**
@@ -199,6 +234,33 @@ const topFunction = () => {
 /**
  * Listeners
  */
+menStyle.addEventListener('change', event => {
+  setFilters();
+  renderTypes();
+});
+
+womenStyle.addEventListener('change', event => {
+  setFilters();
+  renderTypes();
+});
+
+kidsStyle.addEventListener('change', event => {
+  setFilters();
+  renderTypes();
+});
+
+textMin.addEventListener('change', event => {
+  setFilters();
+});
+
+textMax.addEventListener('change', event => {
+  setFilters();
+});
+
+selectType.addEventListener('change', event => {
+  setFilters();
+});
+
 selectSort.addEventListener('change', event => {
   setFilters();
 });
