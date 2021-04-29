@@ -4,12 +4,21 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>👕 Clear Fahion | Environmentally & human-friendly clothes</title>
+  <script>
+    if (localStorage.getItem('theme')) { document.documentElement.setAttribute("data-theme", localStorage.getItem('theme')) }
+    else { document.documentElement.setAttribute("data-theme", "dark") }
+  </script>
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
   <header>
-    <h1>Clear Fashion</h1>
+    <h1>Clear Fashion
+      <label>
+        <input type="checkbox" id="mode-checkbox" checked>
+        <div class="planet"></div>
+      </label>
+    </h1>
   </header>
   <nav class="search">
     <div class="search-container">
@@ -63,7 +72,7 @@
     <div id="products" class="products-container"></div>
     <div class="load-container" id="load-more-container"></div>
   </section>
-  <footer><span>Made with 💙 by </span><a href="https://github.com/VLNTNF/clear-fashion">VLNTNF</a></footer>
+  <footer><span id="made">Made with 💙 by </span><a href="https://github.com/VLNTNF/clear-fashion">VLNTNF</a></footer>
   <script type="text/javascript" charset="UTF-8" src="brands.js"></script>
   <script type="text/javascript" charset="UTF-8" src="index.js"></script>
 </body>

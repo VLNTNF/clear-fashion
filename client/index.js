@@ -25,6 +25,8 @@ const kidsStyle = document.getElementById("kids-style");
 const loaderDiv = document.getElementById("loader");
 const textMin = document.getElementById("min-text");
 const textMax = document.getElementById("max-text");
+const modeCheckbox = document.getElementById('mode-checkbox');
+const madeSpan = document.getElementById('made');
 
 /**
  * Set
@@ -44,6 +46,8 @@ const setFilters = () => {
  * Load
  */
 const preload = async () => {
+  setFilters();
+  renderToggle();
   await renderTypes();
   await renderBrands();
   await load();
@@ -222,6 +226,32 @@ const renderTypes = async () => {
   selectType.innerHTML = options;
 };
 
+const renderToggle = () => {
+  if (document.documentElement.getAttribute('data-theme') == 'dark') {
+    modeCheckbox.checked = true;
+  } else {
+    modeCheckbox.checked = false;
+  }
+};
+
+const modeToggle = () => {
+  document.documentElement.style.opacity = 0;
+  document.documentElement.style.visibility = 'hidden';
+  document.body.clientWidth;
+  let theme = document.documentElement.getAttribute('data-theme');
+  if (theme == 'dark') {
+    document.documentElement.setAttribute('data-theme', 'light');
+    localStorage.setItem('theme', 'light');
+    madeSpan.innerHTML = 'Made with 🧡 by ';
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+    madeSpan.innerHTML = 'Made with 💙 by ';
+  }
+  document.documentElement.style.visibility = 'visible';
+  document.documentElement.style.opacity = 1;
+};
+
 /**
  * Back to top button
  */
@@ -233,45 +263,23 @@ const topFunction = () => {
 /**
  * Listeners
  */
-menStyle.addEventListener('change', event => {
+menStyle.addEventListener('change', () => {
   setFilters();
   renderTypes();
 });
-
-womenStyle.addEventListener('change', event => {
+womenStyle.addEventListener('change', () => {
   setFilters();
   renderTypes();
 });
-
-kidsStyle.addEventListener('change', event => {
+kidsStyle.addEventListener('change', () => {
   setFilters();
   renderTypes();
 });
-
-textMin.addEventListener('change', event => {
-  setFilters();
-});
-
-textMax.addEventListener('change', event => {
-  setFilters();
-});
-
-selectType.addEventListener('change', event => {
-  setFilters();
-});
-
-selectSort.addEventListener('change', event => {
-  setFilters();
-});
-
-selectBrand.addEventListener('change', event => {
-  setFilters();
-});
-
-searchButton.addEventListener('click', event => {
-  load();
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  preload();
-});
+textMin.addEventListener('change', setFilters);
+textMax.addEventListener('change', setFilters);
+selectType.addEventListener('change', setFilters);
+selectSort.addEventListener('change', setFilters);
+selectBrand.addEventListener('change', setFilters);
+searchButton.addEventListener('click', load);
+document.addEventListener('DOMContentLoaded', preload);
+modeCheckbox.addEventListener('change', modeToggle);
